@@ -12,7 +12,7 @@ context = {
   "content": article_obj.content
 }
 
-HTML_STRING = render_to_string("home-view.html",context=context)
+HTML_STRING = render_to_string('home-view.html',context=context)
 
 def home_view(request):
   return HttpResponse(HTML_STRING)
