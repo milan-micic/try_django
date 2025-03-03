@@ -6,7 +6,9 @@
 
 <ul>
   {% for x in object_list %}
-    <li><a href="/articles/{{ x.id }}" />{{ x.title }} - {{ x.content }}</li>
+    <li>
+      <a href="/articles/{{ x.id }}/">{{ x.title }} - {{ x.content }}</a>
+    </li>
   {% endfor %}
 </ul>
 
