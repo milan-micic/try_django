@@ -8,7 +8,7 @@ def article_search_view(request):
   # query = query_dict.get("q") # <input type="text" name="q" />
   try:
     query = int(query_dict.get("q"))
-  except:
+  except:  # noqa: E722
     query = None
   article_obj = None
   if query is not None:
